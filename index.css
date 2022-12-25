@@ -11,6 +11,49 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+.float {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.float:hover {
+    width: 60px;
+    height: 60px;
+    font-size: 40px;
+}
+
+@keyframes floating {
+    0% {
+        transform: translate(0, 0px);
+    }
+
+    50% {
+        transform: translate(0, 15px);
+    }
+
+    100% {
+        transform: translate(0, -0px);
+    }
+}
+
 header {
     top: 0;
     position: fixed;
@@ -229,23 +272,23 @@ main {
 
 section {
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
     position: relative;
+    top: 8rem;
 }
 
 .home {
-    position: absolute;
-    top: 5rem;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
+    height: fit-content;
 }
 
 .hero {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    padding-left: 5rem;
+    width: 50%;
 }
 
 .t1 {
@@ -260,7 +303,7 @@ section {
     font-size: 3rem;
 }
 
-.t2 span{
+.t2 span {
     color: #E21D24;
 }
 
@@ -272,7 +315,7 @@ section {
 
 .t4 {
     background-color: #E21D24;
-    width: fit-content;
+    width: 13rem;
     margin-top: 1.5rem;
     font-weight: 600;
     font-size: 1.2rem;
@@ -280,10 +323,20 @@ section {
     border-radius: 5px;
     padding: 1rem;
     color: #ffffff;
+    transition: .3s ease-in-out;
 }
 
-.t4 span {
+.t4 i {
+    transition: .3s ease-in-out;
     font-size: 1.5rem;
+}
+
+.t4:hover i{
+    transform: translateX(10px);
+}
+
+.t4:hover{
+    box-shadow: rgb(185, 185, 185) 3px 3px 3px 3px;
 }
 
 .sponsors {
@@ -299,8 +352,231 @@ section {
     padding-right: 3rem;
 }
 
+.img{
+    height: 5rem;
+    transition: .3s ease-in-out;
+}
+
+.img:hover{
+    scale: 1.2;
+}
+
+.imgContainer {
+    width: 38rem;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+/*Area of images*/
+.wrapper {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    animation: slide 16s infinite;
+}
+
+.stud {
+    width: 100%;
+}
+
+/*Animation activated by keyframes*/
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(0);
+    }
+
+    30% {
+        transform: translateX(-100%);
+    }
+
+    50% {
+        transform: translateX(-100%);
+    }
+
+    55% {
+        transform: translateX(-200%);
+    }
+
+    75% {
+        transform: translateX(-200%);
+    }
+
+    80% {
+        transform: translateX(-300%);
+    }
+
+    100% {
+        transform: translateX(-300%);
+    }
+}
+
+
+
+
+
+.course,
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.heading {
+    text-align: center;
+    padding: 1rem;
+    margin-top: 1rem;
+    gap: 1rem;
+    width: 50%;
+}
+
+.h1 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.sub-head {
+    font-size: 1.3rem;
+}
+
+.container {
+    margin: 5rem;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    height: 17rem;
+    width: 25rem;
+    border-radius: 25px;
+    background-color: #FFC6C6;
+    transition: .3s ease-in-out;
+}
+
+.box:hover {
+    box-shadow: 5px 5px 5px rgba(255, 81, 81, 0.6);
+}
+
+.circle {
+    border-radius: 25px;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.box h3 {
+    margin-bottom: .5rem;
+}
+
+.footer {
+    padding: 1rem;
+    width: 100%;
+    height: fit-content;
+    background-color: #E21D24;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.logo2 {
+    height: 10rem;
+    margin-bottom: .5rem;
+}
+
+.socials {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: .8rem;
+}
+
+.socials p {
+    color: #ffffff;
+    width: 70%;
+    padding: .5rem;
+    margin-bottom: .5rem;
+}
+
+.sociallinks {
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    font-size: 2rem;
+}
+
+.sociallinks a {
+    height: 3rem;
+    width: 3rem;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    justify-content: center;
+    background-color: #ffffff;
+    color: #E21D24;
+    padding: .5rem;
+    border-radius: 50px;
+}
+
+.links {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+
+.usefullinks,
+.place {
+    width: 20rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.usefullinks a,
+.usefullinks p,
+.place a,
+.place p {
+    transition: .3s ease-in-out;
+    padding: .5rem;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.usefullinks p,
+.india {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.usefullinks a:hover {
+    transform: translateX(5px);
+}
+
+
 
 @media (width<800px) {
+    .float {
+        right: 20px;
+    }
+
     .home {
         height: fit-content;
         flex-direction: column;
@@ -309,7 +585,7 @@ section {
 
     .hero {
         width: 100%;
-        padding-left: 1rem;
+        padding-left: .5rem;
     }
 
     .spo {
@@ -320,7 +596,26 @@ section {
         height: 5rem;
     }
 
-    .students{
-        height: 10rem;
+    .stud {
+        height: 25rem;
+    }
+
+    .heading {
+        width: 100%;
+    }
+
+    .imgContainer {
+        margin-top: 1rem;
+        width: 25rem;
+    }
+
+    .socials{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .links{
+        margin-top: 1rem;
+        gap: 1rem;
     }
 }
