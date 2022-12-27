@@ -326,6 +326,12 @@ section {
     color: #E21D24;
     padding: .5rem;
     border-radius: 50px;
+    transition: .3s ease-in-out;
+}
+
+.sociallinks a:hover{
+    background-color: #E21D24;
+    color: #ffffff;
 }
 
 .links {

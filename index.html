@@ -6,10 +6,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>GoodSheperd</title>
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="Styles/index.css">
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
   <script src="https://kit.fontawesome.com/5be8782ad0.js" crossorigin="anonymous"></script>
-  <!-- <script defer src="index.js"></script> -->
+  <script src="index.js"></script>
 </head>
 
 <body>
@@ -41,16 +44,21 @@
 
     <section class="home">
       <div class="hero">
-        <p class="t1">#Trusted by Students </p>
-        <p class="t2">
+        <p class="t1" data-aos="fade-right" data-aos-delay="300" data-aos-easing="ease-in-sine"
+          data-aos-duration="500">#Trusted by Students
+        </p>
+        <p class="t2" data-aos="fade-right" data-aos-delay="300" data-aos-easing="ease-in-sine"
+          data-aos-duration="500">
           MANAGEMENT Courses <span>100%</span> Placement with GOOD SHERPERD
         </p>
-        <p class="t3">
+        <p class="t3" data-aos="fade-right" data-aos-delay="600" data-aos-easing="ease-in-sine"
+          data-aos-duration="2000">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis vitae, ad excepturi deserunt neque atque, eius
           delectus esse ullam, iure at sed ducimus repudiandae hic architecto incidunt eos consequuntur quos.
         </p>
-        <button class="t4">GET STARTED <i class="fa-sharp fa-solid fa-arrow-right"></i></button>
-        <div class="sponsors">
+        <p class="t3" data-aos="fade-right" data-aos-delay="2500" data-aos-easing="ease-in-sine">
+          <button class="t4">GET STARTED <i class="fa-sharp fa-solid fa-arrow-right"></i></button>
+        <div class="sponsors" data-aos="fade-right" data-aos-delay="3000" data-aos-easing="ease-in-sine">
           <p class="spo">Powered By</p>
           <a href="https://www.vibemunnar.com/"><img class="spo img" src="Assets/vibe.png" alt="Vibe"></a>
           <a href="https://www.thefogmunnar.com/"><img class="spo img" src="Assets/fog.png" alt="Fog Munnar"></a>
@@ -224,6 +232,12 @@
     </section>
 
 
+    <section class="review">
+
+
+    </section>
+
+
     <section class="footer">
       <div class="socials">
         <img class="logo2" src="Assets/logo_2.png" alt="logo">
@@ -257,5 +271,9 @@
   </main>
 
 </body>
+
+<script>
+  AOS.init();
+</script>
 
 </html>
