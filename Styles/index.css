@@ -272,7 +272,6 @@ main {
 
 section {
     width: 100%;
-    /* height: 100vh; */
     position: relative;
     top: 8rem;
 }
@@ -420,6 +419,7 @@ section {
 
 .course,
 .heading {
+    margin: 2rem 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -435,7 +435,7 @@ section {
 }
 
 .h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 700;
 }
 
@@ -444,11 +444,10 @@ section {
 }
 
 .container {
-    margin: 5rem;
     margin-top: 1rem;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 1rem;
 }
@@ -456,12 +455,12 @@ section {
 .box {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding: 2rem;
-    height: 17rem;
-    width: 25rem;
+    padding: 1rem;
+    height: 13rem;
+    width: 17rem;
     border-radius: 25px;
     background-color: #FFC6C6;
+    font-size: 1.1rem;
     transition: .3s ease-in-out;
 }
 
@@ -483,6 +482,63 @@ section {
 
 .box h3 {
     margin-bottom: .5rem;
+}
+
+.ourmission {
+    padding: 2rem 5rem;
+    margin: 0 1.2rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.h1-left span {
+    color: #E21D24;
+    font-size: 3rem;
+}
+
+.ourmission p:nth-child(2) {
+    font-size: 1.2rem;
+}
+
+.accreditation {
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.accreditation h1 {
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+}
+
+.accreditation img {
+    height: 4rem;
+}
+
+.career {
+    height: fit-content;
+    flex-direction: column;
+    position: relative;
+}
+
+.career h1 {
+    font-size: 3rem;
+}
+
+.career img {
+    /* position: absolute; */
+    width: 15rem;
+    z-index: -1;
+}
+
+.accreditation h1 a {
+    font-size: 2rem;
+    color: black;
+}
+
+.accreditation_head {
+    display: flex;
+    gap: .5rem;
 }
 
 .footer {
@@ -575,8 +631,9 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 1rem 5rem;
+    padding: 2rem 5rem;
     flex-wrap: wrap;
+    overflow: hidden;
 }
 
 .faq-think {
@@ -599,6 +656,16 @@ section {
 
 .faq-think img {
     width: 25rem;
+}
+
+.dots {
+    position: absolute;
+    rotate: 40deg;
+    left: 0;
+    bottom: 0;
+    transform: translateX(-50px);
+    z-index: -1;
+    background-color: aqua;
 }
 
 
@@ -673,8 +740,7 @@ input[type='checkbox'] {
 }
 
 .collapsible-content .content-inner {
-    background-color: rgba(255, 255, 255, 0.7);
-    border: 1px solid gray;
+    background-color: rgb(255, 64, 64, .7);
     border-bottom-left-radius: 7px;
     border-bottom-right-radius: 7px;
     padding: .5rem 1rem;
@@ -683,6 +749,76 @@ input[type='checkbox'] {
 .collapsible-content p {
     margin-bottom: 0;
 }
+
+
+@media (width<1025px) {
+    .float {
+        right: 20px;
+    }
+
+    .home {
+        height: fit-content;
+        top: 9rem;
+    }
+
+    .hero {
+        padding-left: .5rem;
+    }
+
+    .box {
+        margin: 0rem 5rem;
+        width: 100%;
+    }
+
+    .accreditation_head {
+        flex-direction: column;
+    }
+
+    .ourmission {
+        padding: 2rem 5rem;
+        margin: 0rem;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .spo {
+        padding-right: 1rem;
+    }
+
+    .img {
+        height: 5rem;
+    }
+
+    .stud {
+        height: 25rem;
+    }
+
+    .heading {
+        width: 100%;
+    }
+
+    .imgContainer {
+        margin-top: 1rem;
+        width: 25rem;
+    }
+
+    .socials {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .links {
+        margin-top: 1rem;
+        gap: 1rem;
+    }
+
+    .faq {
+        padding: 0rem;
+        margin-bottom: 1rem;
+    }
+}
+
+
 
 
 @media (width<800px) {
@@ -699,6 +835,18 @@ input[type='checkbox'] {
     .hero {
         width: 100%;
         padding-left: .5rem;
+    }
+
+    .box {
+        margin: 0 1rem;
+        width: fit-content;
+    }
+
+    .ourmission {
+        padding: 2rem 1rem;
+        margin: 0rem;
+        flex-direction: column;
+        gap: 1rem;
     }
 
     .spo {

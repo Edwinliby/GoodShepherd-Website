@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+
+main {
+    width: 100%;
+    height: fit-content;
+}
+
+section {
+    width: 100%;
+    position: relative;
+    top: 8rem;
+}
+
+.course_details {
+    padding: 1rem 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.course_details b,
+.course_details p {
+    font-size: 1.2rem;
+}
+
+.ul {
+    padding-left: 2rem;
+    font-size: 1.2rem;
+    margin-left: 10px;
+    list-style-type: square;
+}
+
+.bigtxt {
+    font-size: 2.5rem;
+}
+
+table,
+th,
+td {
+    border: 1.5px solid black;
+    border-collapse: collapse;
+    text-align: left;
+    padding: 1.5rem;
+    font-weight: 600;
+}
+
+th {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+@media(width<800px) {
+    .course_details {
+        padding: .5rem;
+    }
+}
