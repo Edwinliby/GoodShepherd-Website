@@ -60,6 +60,23 @@ th {
     font-weight: 700;
 }
 
+
+.career {
+    height: fit-content;
+    flex-direction: column;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.career h1 {
+    font-size: 3rem;
+}
+
+.h1-left span {
+    color: #E21D24;
+    font-size: 3rem;
+}
+
 @media(width<800px) {
     .course_details {
         padding: .5rem;

@@ -27,6 +27,7 @@ a {
 .founder-img {
     height: 30rem;
     border-radius: 5rem;
+    background-color: #f3f3f3;
 }
 
 .about {
@@ -69,9 +70,41 @@ a {
     transform: translateX(5px);
 }
 
+.accreditation {
+    padding: 2rem 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    font-size: 1.2rem;
+}
+
+.accreditation h1 {
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+}
+
+.accreditation img {
+    height: 6rem;
+}
+
+#myBtn{
+    width: 5rem;
+    padding: .3rem; 
+}
+
+
 @media (width<800px) {
     .founder {
         flex-direction: column;
+        padding: 1rem;
+    }
+
+    .founder-img {
+        margin-top: 1rem;
+    }
+
+    .accreditation {
         padding: 1rem;
     }
 }
