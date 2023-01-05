@@ -11,7 +11,7 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-a {
+.about a {
     color: black;
     text-decoration: none;
     font-weight: 600;
@@ -88,6 +88,50 @@ a {
     height: 6rem;
 }
 
+.more{
+    margin-bottom: 2rem;
+}
+
+#check {
+    display: none;
+}
+
+.readmore {
+    display: none;
+}
+
+.lal {
+    display: inline;
+    text-decoration: underline;
+    font-weight: 600;
+    margin-top: 2rem;
+}
+
+#check:checked~.readmore {
+    display: block;
+}
+
+.placement {
+    margin: 2.5rem 0;
+    padding: 0 5rem;
+    display: flex;
+    gap: 1.5rem;
+    font-size: 1.2rem;
+}
+
+.fog,
+.vibe {
+    background-color: #FFC6C6;
+    padding: 1.5rem;
+    width: 50%;
+    border-radius: 20px;
+}
+
+.fog img,
+.vibe img {
+    float: left;
+    padding-right: .5rem;
+}
 
 @media (width<800px) {
     .founder {
@@ -102,24 +146,15 @@ a {
     .accreditation {
         padding: 1rem;
     }
-}
 
+    .placement {
+        flex-direction: column;
+        padding: 1rem;
+        gap: 2rem;
+    }
 
-#check{
-    display: none;
-}
-
-.readmore{
-    display: none;
-}
-
-.lal{
-    display: inline;
-    text-decoration:underline;
-    font-weight: 600;
-    margin-top: 2rem;
-}
-
-#check:checked ~ .readmore{
-    display: block;
+    .fog,
+    .vibe {
+        width: 100%;
+    }
 }

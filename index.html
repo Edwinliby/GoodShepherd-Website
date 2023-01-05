@@ -14,7 +14,6 @@
   <title>GoodSheperd</title>
   <link rel="stylesheet" href="Styles/index.css">
 
-
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
@@ -22,14 +21,34 @@
     integrity="sha512-BdHyGtczsUoFcEma+MfXc71KJLv/cd+sUsUaYYf2mXpfG/PtBjNXsPo78+rxWjscxUYN2Qr2+DbeGGiJx81ifg=="
     crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/5be8782ad0.js" crossorigin="anonymous"></script>
+
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-NJLNRG8');</script>
+
+  <style>
+
+  </style>
+
 </head>
 
 <body>
+
+
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NJLNRG8" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+
+
   <header class="header">
     <div class="top">
       <a href="tel: 8606991707"><i class="fa-solid fa-phone"></i> 8606991707</a>
       <a href="mailto:gooddhpered@gmail.com"><i class="fa-solid fa-envelope"></i> goodshperd@gmail.com</a>
-      <a href="#">Have a Question?</a>
+      <a href="#faq">Have a Question?</a>
     </div>
 
     <div class="nav">
@@ -49,7 +68,7 @@
 
     <a href="https://wa.me/918606991707" class="float" target="_blank">
       <i class="fa-brands fa-whatsapp"></i>
-  </a>
+    </a>
 
     <section class="home">
       <div class="hero" data-aos="fade-right" data-aos-delay="500" data-aos-easing="ease-in-sine">
@@ -147,12 +166,13 @@
     </section>
 
     <section>
-      <div class="ourmission" data-aos="zoom-in-up" data-aos-delay="500">
+
+      <div class="ourmission" data-aos="zoom-in-up">
         <h1 class="h1 h1-left">Our <span>Mission</span></h1>
         <p>
           Our mission in Student Experience is to cultivate learning that has a lasting and transformative impact on
           students and communities. <br> <br>
-          Students are at the heart of all that we do. We affi rm the dignity and worth of every individual, regardless
+          Students are at the heart of all that we do. We affirm the dignity and worth of every individual, regardless
           of ethnicity, religion, nationality, sexual orientation, gender expression, and identity. <b>Together, we work
             to
             create positive spaces where we are all aff orded equal opportunities to thrive.</b> <br> <br>
@@ -163,7 +183,7 @@
         </p>
       </div>
 
-      <div id="career" class="ourmission career" data-aos="zoom-in-up" data-aos-delay="500">
+      <div id="career" class="ourmission career" data-aos="zoom-in-up">
         <h1 class="h1 h1-left">Career <span>Opportunities</span></h1>
         <p>
           Graduates can pursue job opportunities in hotels, restaurants, resorts, private clubs and attractions locally
@@ -188,17 +208,20 @@
 
       <div class="ourmission career" data-aos="zoom-in-up">
         <h1 class="h1 h1-left">Placement :</h1>
-        <p>We are proud to off er a <b style="color: #E21D24;">100% placement</b> rate for our hotel management
-          program.
-          Our program is designed
-          to equip graduates with the skills, knowledge, and experience they need to be successful in the
-          hospitality industry. We have a close network of industry partners that provide internships and job
-          opportunities to our students, ensuring they are well-positioned to fi nd employment upon graduation. If
-          you have any further questions, please feel free to contact us. We look forward to helping you with your
-          hotel management program.</p>
+        <div>
+          <img class="placementimg" src="Assets/placement.png" alt="">
+          <p>We are proud to off er a <b style="color: #E21D24;">100% placement</b> rate for our hotel management
+            program.
+            Our program is designed
+            to equip graduates with the skills, knowledge, and experience they need to be successful in the
+            hospitality industry. We have a close network of industry partners that provide internships and job
+            opportunities to our students, ensuring they are well-positioned to fi nd employment upon graduation. If
+            you have any further questions, please feel free to contact us. We look forward to helping you with your
+            hotel management program.</p>
+        </div>
       </div>
 
-      <div class="ourmission accreditation" data-aos="zoom-in-up">
+      <div style="padding-top: 1rem;" class="ourmission accreditation" data-aos="zoom-in-up">
         <h1 class="h1 h1-left">Is this the right fit for me?</h1>
         <b>To succeed in this program, you should:</b>
         <ul class="ul">
@@ -208,7 +231,7 @@
           <li>Become familiar with and adhere to the college's policies and procedures</li>
           <li>Have strong written and oral communication skills</li>
         </ul>
-        <p>If you are engaged in campus life and take advantage of our services and resources, you may be more
+        <p style="font-size: 1.2rem;">If you are engaged in campus life and take advantage of our services and resources, you may be more
           likely to experience success in our college's programs.</p>
       </div>
     </section>
@@ -216,7 +239,6 @@
 
     <section class="faq" id="faq">
       <div class="faq-think" data-aos="fade-right">
-        <!-- <img class="dots" src="Assets/dot_pattern.png" alt="dot pattern"> -->
         <b>FAQ</b>
         <p>Let us answer some of the frequently asked questions</p>
         <img src="Assets/Thnking.png" alt="Thinking">
@@ -317,9 +339,9 @@
 
       <div class="map">
         <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126022.57121835226!2d76.60730652292911!3d9.225922125128285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0622eeffffffff%3A0x79a3ba9d1136f7b9!2sGood%20Shepherd%20College%20of%20Hotel%20Management!5e0!3m2!1sen!2sin!4v1672936137290!5m2!1sen!2sin"
-        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126022.57121835226!2d76.60730652292911!3d9.225922125128285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0622eeffffffff%3A0x79a3ba9d1136f7b9!2sGood%20Shepherd%20College%20of%20Hotel%20Management!5e0!3m2!1sen!2sin!4v1672936137290!5m2!1sen!2sin"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
 
       <div class="links">

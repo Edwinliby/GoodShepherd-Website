@@ -29,7 +29,11 @@ section {
     gap: 1rem;
 }
 
-.course_details b,
+.course_details b{
+    font-size: 1.4rem;
+    padding: 1rem 0;
+}
+
 .course_details p {
     font-size: 1.2rem;
 }
@@ -42,6 +46,7 @@ section {
 }
 
 .bigtxt {
+    margin-top: 2.5rem;
     font-size: 2.5rem;
 }
 
