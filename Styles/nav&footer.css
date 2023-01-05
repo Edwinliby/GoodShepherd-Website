@@ -288,6 +288,17 @@ section {
     justify-content: space-between;
 }
 
+.map {
+    display: flex;
+    align-items: center;
+}
+
+.map iframe {
+    border-radius: 15px;
+    width: fit-content;
+    height: 13rem;
+}
+
 .logo2 {
     height: 10rem;
     margin-bottom: .5rem;

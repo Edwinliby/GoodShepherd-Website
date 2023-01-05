@@ -20,7 +20,7 @@ a {
 .founder {
     display: flex;
     padding: 1rem 5rem;
-    gap: 1rem;
+    gap: 3rem;
     align-items: center;
 }
 
@@ -88,11 +88,6 @@ a {
     height: 6rem;
 }
 
-#myBtn{
-    width: 5rem;
-    padding: .3rem; 
-}
-
 
 @media (width<800px) {
     .founder {
@@ -107,4 +102,24 @@ a {
     .accreditation {
         padding: 1rem;
     }
+}
+
+
+#check{
+    display: none;
+}
+
+.readmore{
+    display: none;
+}
+
+.lal{
+    display: inline;
+    text-decoration:underline;
+    font-weight: 600;
+    margin-top: 2rem;
+}
+
+#check:checked ~ .readmore{
+    display: block;
 }

@@ -14,9 +14,13 @@
   <title>GoodSheperd</title>
   <link rel="stylesheet" href="Styles/index.css">
 
+
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"
+    integrity="sha512-BdHyGtczsUoFcEma+MfXc71KJLv/cd+sUsUaYYf2mXpfG/PtBjNXsPo78+rxWjscxUYN2Qr2+DbeGGiJx81ifg=="
+    crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/5be8782ad0.js" crossorigin="anonymous"></script>
 </head>
 
@@ -43,14 +47,27 @@
 
   <main id="home">
 
-    <a href="https://api.whatsapp.com/send?phone=8606991707" class="float" target="_blank">
+    <a href="https://wa.me/918606991707" class="float" target="_blank">
       <i class="fa-brands fa-whatsapp"></i>
-    </a>
+  </a>
 
     <section class="home">
       <div class="hero" data-aos="fade-right" data-aos-delay="500" data-aos-easing="ease-in-sine">
-        <p class="t1">#Trusted by Students
+        <p class="t1">
+        <div class="text"></div>
         </p>
+
+        <script>
+          var typing = new Typed(".text", {
+            strings: ["", "#Trusted by students", "#Trusted for 100% placement"],
+            typeSpeed: 100,
+            backSpeed: 40,
+            loop: true,
+            showCursor: false,
+          });
+        </script>
+
+
         <p class="t2">
           MANAGEMENT Courses <span>100%</span> Placement with GOOD SHERPERD
         </p>
@@ -67,13 +84,22 @@
         </div>
       </div>
 
-      <div class="imgContainer" data-aos="fade-left" data-aos-delay="500" data-aos-easing="ease-in-sine">
+      <div class="imgContainer" data-aos="fade-left" data-aos-easing="ease-in-sine">
         <div class="wrapper">
           <img class="stud" src="Assets/home.png">
           <img class="stud" src="Assets/Group 207.png">
           <img class="stud" src="Assets/image 8.png">
           <img class="stud" src="Assets/4.png">
         </div>
+      </div>
+
+      <div id="slider" class="slider">
+        <figure>
+          <img src="Assets/home.png" alt>
+          <img src="Assets/Group 207.png" alt>
+          <img src="Assets/image 8.png" alt>
+          <img src="Assets/4.png" alt>
+        </figure>
       </div>
 
     </section>
@@ -277,12 +303,6 @@
     </section>
 
 
-    <section class="review">
-
-
-    </section>
-
-
     <section class="footer">
       <div class="socials">
         <img class="logo2" src="Assets/logo_2.png" alt="logo">
@@ -295,6 +315,13 @@
         </div>
       </div>
 
+      <div class="map">
+        <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126022.57121835226!2d76.60730652292911!3d9.225922125128285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0622eeffffffff%3A0x79a3ba9d1136f7b9!2sGood%20Shepherd%20College%20of%20Hotel%20Management!5e0!3m2!1sen!2sin!4v1672936137290!5m2!1sen!2sin"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
       <div class="links">
         <div class="usefullinks">
           <p>Useful Links</p>
@@ -305,7 +332,8 @@
         </div>
         <div class="place">
           <p class="india">India</p>
-          <p><i class="fa-sharp fa-solid fa-location-dot"></i> Chengannur,<br> Near MC Road,<br> Alappuzha Kerala 689123
+          <p><i class="fa-sharp fa-solid fa-location-dot"></i> Chengannur,<br> Ebenezer Complex,<br> Govt. Hospital Jn
+            MC Road,<br> Alappuzha Kerala 689123
           </p>
           <a href="tel:"><i class="fa-sharp fa-solid fa-phone"></i> 8606991707</a>
           <a href="mailto"><i class="fa-solid fa-envelope"></i> goodshepered@gmail.com</a>

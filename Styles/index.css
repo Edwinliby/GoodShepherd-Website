@@ -291,6 +291,12 @@ section {
 }
 
 .t1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.iam,
+.text {
     font-size: 1.5rem;
     font-weight: 500;
     color: #E21D24;
@@ -363,7 +369,7 @@ section {
 }
 
 .imgContainer {
-    width: 38rem;
+    width: 37rem;
     overflow: hidden;
     border-radius: 10px;
 }
@@ -415,6 +421,67 @@ section {
     }
 }
 
+
+.slider {
+    display: none;
+}
+
+div#slider {
+    overflow: hidden;
+}
+
+div#slider figure img {
+    width: 20%;
+    float: left;
+}
+
+div#slider figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    text-align: left;
+    font-size: 0;
+    animation: 30s slidy infinite;
+}
+
+@keyframes slidy {
+    0% {
+        left: 0%;
+    }
+
+    20% {
+        left: 0%;
+    }
+
+    25% {
+        left: -100%;
+    }
+
+    45% {
+        left: -100%;
+    }
+
+    50% {
+        left: -200%;
+    }
+
+    70% {
+        left: -200%;
+    }
+
+    75% {
+        left: -300%;
+    }
+
+    95% {
+        left: -300%;
+    }
+
+    100% {
+        left: -400%;
+    }
+}
 
 
 
@@ -527,14 +594,14 @@ section {
     font-size: 3rem;
 }
 
-.career a{
+.career a {
     color: #E21D24;
     font-weight: 500;
     font-size: 1.5rem;
     transition: .3s ease-in-out;
 }
 
-.career a:hover{
+.career a:hover {
     color: black;
 }
 
@@ -563,6 +630,17 @@ section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+
+.map {
+    display: flex;
+    align-items: center;
+}
+
+.map iframe {
+    border-radius: 15px;
+    width: fit-content;
+    height: 13rem;
 }
 
 .logo2 {
@@ -767,7 +845,7 @@ input[type='checkbox'] {
 }
 
 
-@media (width<1024px) {
+@media (width<1025px) {
     .float {
         right: 20px;
     }
@@ -815,6 +893,7 @@ input[type='checkbox'] {
     .imgContainer {
         margin-top: 1rem;
         width: 25rem;
+        height: fit-content;
     }
 
     .socials {
@@ -885,6 +964,10 @@ input[type='checkbox'] {
         width: 23rem;
     }
 
+    .slider {
+        display: block;
+    }
+
     .socials {
         width: 100%;
         margin-bottom: 1rem;
@@ -903,5 +986,9 @@ input[type='checkbox'] {
     .h1-left span {
         color: #E21D24;
         font-size: 2.5rem;
+    }
+
+    .map iframe{
+        margin:0  2.5rem;
     }
 }
