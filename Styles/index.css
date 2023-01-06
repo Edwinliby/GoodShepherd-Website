@@ -602,14 +602,25 @@ div#slider figure {
     transition: .3s ease-in-out;
 }
 
-.career div{
+.career div {
     display: flex;
     align-items: center;
     flex-direction: row-reverse;
     gap: 1rem;
 }
 
-.placementimg{
+.opportunity {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.opportunity img {
+    height: fit-content;
+    width: 40rem;
+}
+
+.placementimg {
     width: 25rem;
 }
 
@@ -642,6 +653,21 @@ div#slider figure {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+
+
+.dev {
+    background-color: #E21D24;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+}
+
+.dev a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    text-align: center;
 }
 
 .map {
@@ -954,7 +980,7 @@ input[type='checkbox'] {
         gap: 1rem;
     }
 
-    .career div{
+    .career div {
         flex-direction: column-reverse;
     }
 
@@ -1005,7 +1031,15 @@ input[type='checkbox'] {
         font-size: 2.5rem;
     }
 
-    .map iframe{
-        margin:0 2rem;
+    .map iframe {
+        margin: 0 2rem;
+    }
+
+    .opportunity {
+        flex-direction: column-reverse;
+    }
+
+    .opportunity img {
+        width: 24rem;
     }
 }
