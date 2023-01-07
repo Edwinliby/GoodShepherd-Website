@@ -883,6 +883,112 @@ input[type='checkbox'] {
 }
 
 
+#testimonials {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    height: fit-content;
+    padding: 2rem 5rem;
+}
+
+.testimonial-header {
+    position: relative;
+    text-align: center;
+    margin: 1rem;
+    font-weight: 900;
+    margin-bottom: 2.5rem;
+}
+
+.testimonial-header .title {
+    font-size: 3rem;
+    color: #E21D24;
+}
+
+.testimonial-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.testimonail {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    background-color: rgb(243, 243, 243);
+    justify-content: space-between;
+    border-radius: 20px;
+    transition: 0.3s ease;
+    height: fit-content;
+}
+
+.testimonail:hover {
+    filter: brightness(100%);
+    box-shadow: 10px 20px 200px rgba(0, 0, 0, 0.1);
+}
+
+
+.quote {
+    padding-left: 20px;
+    font-size: 100px;
+    font-family: "Playfair Display", serif;
+    color: #E21D24;
+}
+
+.review {
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 20px;
+    color: #555;
+    transform: translateY(-36%);
+}
+
+.testimonail .info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #ff7b7b;
+    position: relative;
+    width: 100%;
+    height: 100px;
+    border-radius: 20px;
+    transition: 0.3s ease;
+}
+
+.testimonail .info .pfp img {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 130%;
+    height: 130%;
+}
+
+.testimonail .info .pfp {
+    width: 100px;
+    position: absolute;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    overflow: hidden;
+    top: -50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.information {
+    padding-top: 2rem;
+}
+
+.information .name {
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+}
+
 @media (width<1025px) {
     .float {
         right: 20px;
@@ -1041,5 +1147,17 @@ input[type='checkbox'] {
 
     .opportunity img {
         width: 24rem;
+    }
+
+    #testimonials {
+        padding: 1rem;
+    }
+
+    .testimonial-container {
+        flex-direction: column;
+    }
+
+    .testimonail {
+        gap: 25px;
     }
 }
