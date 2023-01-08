@@ -9,11 +9,174 @@
 
     <link rel="icon" href="Assets/favicon.png" type="image/png">
     <link rel="stylesheet" href="Styles/nav&footer.css">
-    <link rel="stylesheet" href="Styles/about.css">
+
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://kit.fontawesome.com/5be8782ad0.js" crossorigin="anonymous"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            color: black;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .about a {
+            color: black;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .founder {
+            display: flex;
+            padding: 1rem 5rem;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .founder-img {
+            height: 30rem;
+            border-radius: 5rem;
+            background-color: #f3f3f3;
+        }
+
+        .about {
+            height: 30rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 1rem;
+            padding: .5rem;
+        }
+
+        .about h1 {
+            font-size: 3rem;
+        }
+
+        .about span {
+            font-size: 1.2rem;
+        }
+
+        .about p {
+            padding: 2rem 0;
+            font-size: 1.3rem;
+        }
+
+        .about a {
+            text-transform: uppercase;
+            transition: .3s ease-in-out;
+        }
+
+        .founder-link {
+            font-size: 2rem;
+        }
+
+        .founder-link a {
+            padding: 1rem .5rem;
+        }
+
+        .about a:hover {
+            color: #E21D24;
+            transform: translateX(5px);
+        }
+
+        .accreditation {
+            padding: 2rem 5rem;
+            display: flex;
+            flex-direction: column;
+            gap: .5rem;
+            font-size: 1.2rem;
+        }
+
+        .accreditation h1 {
+            display: flex;
+            gap: .5rem;
+            align-items: center;
+        }
+
+        .accreditation img {
+            height: 6rem;
+        }
+
+        .more {
+            margin-bottom: 2rem;
+        }
+
+        #check {
+            display: none;
+        }
+
+        .readmore {
+            display: none;
+        }
+
+        .lal {
+            display: inline;
+            text-decoration: underline;
+            font-weight: 600;
+            margin-top: 2rem;
+        }
+
+        #check:checked~.readmore {
+            display: block;
+        }
+
+        .placement {
+            margin: 2.5rem 0;
+            padding: 0 5rem;
+            display: flex;
+            gap: 1.5rem;
+            font-size: 1.2rem;
+        }
+
+        .fog,
+        .vibe {
+            background-color: #FFC6C6;
+            padding: 1.5rem;
+            width: 50%;
+            border-radius: 20px;
+        }
+
+        .fog img,
+        .vibe img {
+            float: left;
+            padding-right: .5rem;
+        }
+
+        @media (width<800px) {
+            .founder {
+                flex-direction: column;
+                padding: 1rem;
+            }
+
+            .founder-img {
+                margin-top: 1rem;
+            }
+
+            .accreditation {
+                padding: 1rem;
+            }
+
+            .placement {
+                flex-direction: column;
+                padding: 1rem;
+                gap: 2rem;
+            }
+
+            .fog,
+            .vibe {
+                width: 100%;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -21,7 +184,8 @@
     <header class="header">
         <div class="top">
             <a href="tel: 8606991707"><i class="fa-solid fa-phone"></i> 8606991707</a>
-            <a href="mailto:goodshepherdcollegecare@gmail.com"><i class="fa-solid fa-envelope"></i> goodshepherdcollegecare@gmail.com</a>
+            <a href="mailto:goodshepherdcollegecare@gmail.com"><i class="fa-solid fa-envelope"></i>
+                goodshepherdcollegecare@gmail.com</a>
             <a href="index.html">Have a Question?</a>
         </div>
 
@@ -67,7 +231,8 @@
             <div class="placement">
                 <div class="fog" data-aos="zoom-in-up">
                     <img src="Assets/fog.png" alt="FOG Munnar hotel">
-                    <p>The <b>FOG MUNNAR</b> is one of the finest eco-friendly resorts in Munnar. It is not at all a surprise
+                    <p>The <b>FOG MUNNAR</b> is one of the finest eco-friendly resorts in Munnar. It is not at all a
+                        surprise
                         if
                         you are embraced with the fog in Munnar. You will be cuddled by the fog in the morning from our
                         luxury resorts. Every visitor to our luxury resorts in Munnar will fall in love with the hug of
@@ -83,7 +248,8 @@
 
                 <div class="vibe" data-aos="zoom-in-up">
                     <img src="Assets/vibe.png" alt="Vibe Munnar spa hotel">
-                    <p><b>Vibe Munnar</b> a vacation beyond your imagination... Looking for a fun fillled and a peaceful holiday spot to
+                    <p><b>Vibe Munnar</b> a vacation beyond your imagination... Looking for a fun fillled and a peaceful
+                        holiday spot to
                         take away your holiday hustle. Being the only property in Munnar to have helipad facility, the
                         biggest spa in kerala and the biggest roof top pool of the state.Vibe is the best resot in
                         Munnar.We have pledged to assure smiles of saisfaction from all our guests. With breathtaking
@@ -98,7 +264,8 @@
             <div class="ourmission accreditation" data-aos="zoom-in-up">
                 <div class="accreditation_head">
                     <h1>an institution accredited by</h1>
-                    <h1><a href="http://www.bssve.in/" style="color: black; text-decoration: none;"> BHARAT SEVAK SAMAJ</a>
+                    <h1><a href="http://www.bssve.in/" style="color: black; text-decoration: none;"> BHARAT SEVAK
+                            SAMAJ</a>
                         <img src="Assets/accreditation_logo.png" alt="Bharat sevak samaj logo">
                     </h1>
                 </div>
@@ -172,7 +339,8 @@
                         Hospital Jn MC Road,<br> Alappuzha Kerala 689123
                     </p>
                     <a href="tel:8606991707"><i class="fa-sharp fa-solid fa-phone"></i> 8606991707</a>
-                    <a href="mailto:goodshepherdcollegecare@gmail.com"><i class="fa-solid fa-envelope"></i> goodshepherdcollegecare@gmail.com</a>
+                    <a href="mailto:goodshepherdcollegecare@gmail.com"><i class="fa-solid fa-envelope"></i>
+                        goodshepherdcollegecare@gmail.com</a>
                 </div>
             </div>
         </section>

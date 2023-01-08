@@ -9,11 +9,128 @@
 
     <link rel="icon" href="Assets/favicon.png" type="image/png">
     <link rel="stylesheet" href="Styles/nav&footer.css">
-    <link rel="stylesheet" href="Styles/course.css">
+    
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://kit.fontawesome.com/5be8782ad0.js" crossorigin="anonymous"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            color: black;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        main {
+            width: 100%;
+            height: fit-content;
+        }
+
+        section {
+            width: 100%;
+            position: relative;
+            top: 8rem;
+        }
+
+        .course_details {
+            padding: 1rem 5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .course_details b {
+            font-size: 1.4rem;
+            padding: 1rem 0;
+        }
+
+        .course_details p {
+            font-size: 1.2rem;
+        }
+
+        .ul {
+            padding-left: 2rem;
+            font-size: 1.2rem;
+            margin-left: 10px;
+            list-style-type: square;
+        }
+
+        .bigtxt {
+            margin-top: 2.5rem;
+            font-size: 2.5rem;
+        }
+
+        .h1-left span {
+            color: #E21D24;
+            font-size: 4rem;
+        }
+
+        .opportunity {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row-reverse;
+        }
+
+        .opportunity img {
+            height: fit-content;
+            width: 40rem;
+        }
+
+        table,
+        th,
+        td {
+            border: 1.5px solid black;
+            border-collapse: collapse;
+            text-align: left;
+            padding: 1.5rem;
+            font-weight: 600;
+        }
+
+        th {
+            font-size: 1.2rem;
+            font-weight: 700;
+        }
+
+
+        .career {
+            height: fit-content;
+            flex-direction: column;
+            position: relative;
+            padding-bottom: 1rem;
+        }
+
+        .career h1 {
+            font-size: 3rem;
+        }
+
+        .h1-left span {
+            color: #E21D24;
+            font-size: 3rem;
+        }
+
+        @media(width<800px) {
+            .course_details {
+                padding: .5rem;
+            }
+
+            .opportunity {
+                flex-direction: column-reverse;
+            }
+
+            .opportunity img {
+                width: 24rem;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -21,7 +138,8 @@
     <header class="header">
         <div class="top">
             <a href="tel: 8606991707"><i class="fa-solid fa-phone"></i> 8606991707</a>
-            <a href="mailto:goodshepherdcollegecare@gmail.com"><i class="fa-solid fa-envelope"></i> goodshepherdcollegecare@gmail.com</a>
+            <a href="mailto:goodshepherdcollegecare@gmail.com"><i class="fa-solid fa-envelope"></i>
+                goodshepherdcollegecare@gmail.com</a>
             <a href="index.html">Have a Question?</a>
         </div>
 
@@ -47,31 +165,38 @@
 
         <section class="course_details">
 
-            <div class="ourmission career" data-aos="zoom-in-up">
-                <h1 class="h1 h1-left" style="margin-bottom: 1.5rem;">Career <span>Opportunities</span></h1>
-                <p>
-                    Graduates can pursue job opportunities in hotels, restaurants, resorts, private clubs and
-                    attractions locally
-                    and worldwide. Related careers include: <br><br>
-                    <b>Hotels and Accommodations :</b> Concierge, sales/marketing coordinator, guest services, room
-                    service,
-                    business centre associate. <br><br>
-                    <b>Restaurant and Service Operations :</b> Junior manager/floor manager, server, bartender, closing
-                    supervisor.<br><br>
-                    <b>Beverage Management :</b> Bartender, jr. sommelier, wine captain, beer technician, tasting room
-                    associate,
-                    sales
-                    representative, mixologist. <br><br>
-                    <b>Event Management :</b> Events operations coordinator, resource development coordinator, special
-                    event
-                    manager,
-                    facilities/venue rental manager. <br><br>
-                    <b>Travel and Tourism :</b> Junior travel counsellor, destination marketing and sales coordinator,
-                    customer
-                    service representative, airline guide, tourism coordinator/specialist. <br><br>
-                    <b>Entrepreneurship and Innovation :</b> Small business owner, property management/lease, marketing
-                    and sales.
-                </p>
+            <div id="career" class="ourmission career" data-aos="zoom-in-up">
+                <h1 class="h1 h1-left" style="padding-bottom: 1.5rem;">Career <span>Opportunities</span></h1>
+                <div class="opportunity">
+                    <img src="Assets/oppurtunity.png" alt="Career Opportunity illustration">
+                    <p>
+                        Graduates can pursue job opportunities in hotels, restaurants, resorts, private clubs and
+                        attractions
+                        locally
+                        and worldwide. Related careers include: <br><br>
+                        <b>Hotels and Accommodations :</b> Concierge, sales/marketing coordinator, guest services, room
+                        service,
+                        business centre associate. <br><br>
+                        <b>Restaurant and Service Operations :</b> Junior manager/floor manager, server, bartender,
+                        closing
+                        supervisor.<br><br>
+                        <b>Beverage Management :</b> Bartender, jr. sommelier, wine captain, beer technician, tasting
+                        room
+                        associate,
+                        sales
+                        representative, mixologist. <br><br>
+                        <b>Event Management :</b> Events operations coordinator, resource development coordinator,
+                        special event
+                        manager,
+                        facilities/venue rental manager. <br><br>
+                        <b>Travel and Tourism :</b> Junior travel counsellor, destination marketing and sales
+                        coordinator, customer
+                        service representative, airline guide, tourism coordinator/specialist. <br><br>
+                        <b>Entrepreneurship and Innovation :</b> Small business owner, property management/lease,
+                        marketing and
+                        sales.
+                    </p>
+                </div>
             </div>
 
             <h1 class="bigtxt">Why Hospitality and Tourism Management ?</h1>
@@ -180,11 +305,12 @@
                         Hospital Jn MC Road,<br> Alappuzha Kerala 689123
                     </p>
                     <a href="tel:8606991707"><i class="fa-sharp fa-solid fa-phone"></i> 8606991707</a>
-                    <a href="mailto:goodshepherdcollegecare@gmail.com"><i class="fa-solid fa-envelope"></i> goodshepherdcollegecare@gmail.com</a>
+                    <a href="mailto:goodshepherdcollegecare@gmail.com"><i class="fa-solid fa-envelope"></i>
+                        goodshepherdcollegecare@gmail.com</a>
                 </div>
             </div>
         </section>
-        
+
         <section>
             <div class="dev">
                 <a href="https://linktr.ee/Volshauz">Designed and Developed by Volshauz</a>
