@@ -4,6 +4,12 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 10rem;
 }
 
 body {
@@ -60,6 +66,7 @@ header {
     width: 100%;
     z-index: 5;
     transition: 0.3s ease-in-out;
+    background-color: #E21D24;
 }
 
 .top {
@@ -83,15 +90,6 @@ header {
     height: 6rem;
 }
 
-.header {
-    background-color: #E21D24;
-    backdrop-filter: blur(8px);
-    position: fixed;
-    width: 100%;
-    z-index: 3;
-    transition: 0.3s ease-in-out;
-}
-
 .header ul {
     margin: 0;
     margin-top: 1rem;
@@ -102,7 +100,7 @@ header {
 
 .header li a {
     display: block;
-    padding: 20px 20px;
+    padding: 10px 20px;
     color: white;
     font-size: 1.2em;
     text-decoration: none;
@@ -111,7 +109,6 @@ header {
 .header .logo {
     display: block;
     float: left;
-    font-size: 2em;
     padding: 10px 20px;
     text-decoration: none;
 }
@@ -503,6 +500,21 @@ div#slider figure {
     width: 50%;
 }
 
+.fade_txt {
+    position: relative;
+    font-size: 3.5rem;
+    font-weight: 900;
+    color: rgba(255, 107, 107, 0.1)
+}
+
+.fade_txt1 {
+    position: absolute;
+    font-size: 2.5rem;
+    bottom: -5px;
+    left: 15%;
+    color: rgb(0, 0, 0);
+}
+
 .h1 {
     font-size: 2.5rem;
     font-weight: 700;
@@ -585,7 +597,7 @@ div#slider figure {
 }
 
 .career {
-    padding-top: 1.5rem;
+    padding-top: 2rem;
     height: fit-content;
     flex-direction: column;
     position: relative;
@@ -990,6 +1002,64 @@ input[type='checkbox'] {
     font-weight: 600;
 }
 
+.aboutvibe {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 6rem;
+    font-size: 1.2rem;
+}
+
+figure {
+    position: relative;
+}
+
+.hotel_png {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 95%;
+    height: 90%;
+    border: 2px #fff solid;
+    border-radius: 25px;
+    display: none;
+    transition: .3s ease-in-out;
+}
+
+.hotel_png img {
+    width: 5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .5s ease-in-out;
+}
+
+.hotel_png img:hover {
+    width: 6rem;
+}
+
+figure:hover .hotel_png {
+    display: block;
+}
+
+.hotelimg {
+    box-shadow: rgb(201, 201, 201) 8px 8px 5px;
+    border-radius: 25px;
+}
+
+.htlimg {
+    box-shadow: rgb(201, 201, 201) -8px 8px 5px;
+}
+
+.block-one,
+.block-two {
+    padding-top: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
 @media (width<1025px) {
     .float {
         right: 20px;
@@ -1055,6 +1125,11 @@ input[type='checkbox'] {
         padding: 0rem;
         margin-bottom: 1rem;
     }
+
+    .block-two {
+        flex-direction: column-reverse;
+        align-items: flex-end;
+    }
 }
 
 
@@ -1078,6 +1153,16 @@ input[type='checkbox'] {
     .box {
         margin: 0 1rem;
         width: fit-content;
+    }
+
+    .fade_txt {
+        font-size: 2.5rem;
+    }
+
+    .fade_txt1 {
+        font-size: 2rem;
+        bottom: -15px;
+        left: 10%;
     }
 
     .ourmission {
@@ -1161,4 +1246,13 @@ input[type='checkbox'] {
     .testimonail {
         gap: 25px;
     }
+
+    .aboutvibe {
+        padding: 2rem 1rem;
+    }
+
+    .hotelimg {
+        width: 22rem;
+    }
+
 }
