@@ -15,7 +15,55 @@ html {
 body {
     color: black;
     font-family: 'Montserrat', sans-serif;
+    background-image: linear-gradient(rgb(249, 249, 249, .5) 3px, transparent 0), linear-gradient(90deg, rgb(249, 249, 249, .5) 3px, transparent 0);
+    background-size: 60px 60px;
 }
+
+/* .popup {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .3);
+    display: grid;
+    place-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: 200ms ease-in-out opacity;
+}
+
+.popup-content {
+    width: 20rem;
+    background-color: #fff;
+    padding: clamp(1.5rem, 100vw, 3rem);
+    box-shadow: 0 0 .5em rgba(0, 0, 0, .5);
+    border-radius: .5em;
+    opacity: 0;
+    transform: translateY(20%);
+    transition: 200ms ease-in-out opacity,
+        200ms ease-in-out transform;
+    position: relative;
+}
+
+.popup h1 {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    line-height: 1;
+    cursor: pointer;
+    user-select: none;
+}
+
+.popup h1:active {
+    transform: scale(.9);
+}
+
+.showPopup {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: all;
+} */
 
 .float {
     position: fixed;
@@ -74,7 +122,7 @@ header {
     align-items: center;
     justify-content: flex-end;
     flex-wrap: wrap;
-    height: 2rem;
+    height: 1.5rem;
     width: 100%;
     background-color: #ffffff;
 }
@@ -87,12 +135,12 @@ header {
 
 .logo {
     padding-left: 2rem;
-    height: 6rem;
+    height: 5rem;
 }
 
 .header ul {
     margin: 0;
-    margin-top: 1rem;
+    margin-top: .5rem;
     padding: 0;
     list-style: none;
     overflow: hidden;
@@ -664,6 +712,7 @@ div#slider figure {
     background-color: #E21D24;
     display: flex;
     flex-wrap: wrap;
+    gap: 2rem;
     justify-content: space-between;
 }
 
@@ -738,12 +787,12 @@ div#slider figure {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    gap: 5rem;
+    gap: 2rem;
 }
 
 .usefullinks,
 .place {
-    width: 20rem;
+    width: fit-content;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -776,6 +825,7 @@ div#slider figure {
     justify-content: center;
     padding: 1rem 5rem;
     flex-wrap: wrap;
+    gap: 1.5rem;
     overflow: hidden;
 }
 
@@ -784,7 +834,7 @@ div#slider figure {
     flex-direction: column;
     justify-content: center;
     gap: .5rem;
-    width: 25rem;
+    width: 23rem;
 }
 
 .faq-think b {
@@ -796,23 +846,11 @@ div#slider figure {
 .faq-think p {
     padding-left: 1.5rem;
     font-size: 1.2rem;
-    /* width: 70%; */
 }
 
 .faq-think img {
     width: 25rem;
 }
-
-.dots {
-    position: absolute;
-    rotate: 40deg;
-    left: 0;
-    bottom: 0;
-    transform: translateX(-50px);
-    z-index: -1;
-    background-color: aqua;
-}
-
 
 input[type='checkbox'] {
     display: none;
@@ -834,7 +872,7 @@ input[type='checkbox'] {
 
 .lbl-toggle {
     display: block;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 1.2rem;
     padding: 1rem;
     color: rgb(0, 0, 0);
@@ -918,13 +956,6 @@ input[type='checkbox'] {
     color: #E21D24;
 }
 
-.testimonial-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-}
-
 .testimonail {
     display: flex;
     align-items: flex-start;
@@ -933,7 +964,7 @@ input[type='checkbox'] {
     justify-content: space-between;
     border-radius: 20px;
     transition: 0.3s ease;
-    height: fit-content;
+    height: 70vh;
 }
 
 .testimonail:hover {
@@ -947,6 +978,7 @@ input[type='checkbox'] {
     font-size: 100px;
     font-family: "Playfair Display", serif;
     color: #E21D24;
+    padding-bottom: 2rem;
 }
 
 .review {
@@ -1089,6 +1121,10 @@ figure:hover .hotel_png {
         gap: 1rem;
     }
 
+    .career div {
+        flex-direction: column-reverse;
+    }
+
     .spo {
         padding-right: 1rem;
     }
@@ -1126,7 +1162,7 @@ figure:hover .hotel_png {
         margin-bottom: 1rem;
     }
 
-    .block-one{
+    .block-one {
         flex-direction: column;
         align-items: flex-start;
     }
@@ -1177,8 +1213,8 @@ figure:hover .hotel_png {
         gap: 1rem;
     }
 
-    .career div {
-        flex-direction: column-reverse;
+    .usefullinks {
+        width: 22rem;
     }
 
     .spo {
@@ -1244,12 +1280,9 @@ figure:hover .hotel_png {
         padding: 1rem;
     }
 
-    .testimonial-container {
-        flex-direction: column;
-    }
 
     .testimonail {
-        gap: 25px;
+       height: fit-content;
     }
 
     .aboutvibe {
