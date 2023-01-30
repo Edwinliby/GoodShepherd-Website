@@ -9,7 +9,7 @@
 body {
     color: black;
     font-family: 'Montserrat', sans-serif;
-    background-image: linear-gradient(#f9f9f9 3.1px, transparent 0), linear-gradient(90deg, #f9f9f9 3.1px, #fff 0);
+    background-image: linear-gradient(rgb(249, 249, 249, .5) 3px, transparent 0), linear-gradient(90deg, rgb(249, 249, 249, .5) 3px, transparent 0);
     background-size: 60px 60px;
 }
 
