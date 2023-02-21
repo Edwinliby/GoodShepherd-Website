@@ -984,7 +984,7 @@ input[type='checkbox'] {
     justify-content: space-between;
     border-radius: 20px;
     transition: 0.3s ease;
-    height: 70vh;
+    height: fit-content;
 }
 
 .testimonail:hover {
